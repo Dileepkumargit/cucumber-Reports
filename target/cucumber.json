@@ -1,0 +1,74 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11617427000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openbrpwser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 73400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.quitTheBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5953262500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I want to google website",
+            "match": {
+              "location": "stepdefination.i_want_to_google_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enter the search keyword",
+            "match": {
+              "location": "stepdefination.enter_the_search_keyword()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "C:/Users/abc/eclipse-workspace/Reports/src/test/java/features/google.feature"
+  }
+]

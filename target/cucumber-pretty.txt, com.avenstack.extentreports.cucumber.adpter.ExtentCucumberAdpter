@@ -1,0 +1,7 @@
+Feature: Title of your feature
+  I want to use this template for my feature file
+
+  @tag1
+  Scenario: Title of your scenario # C:/Users/abc/eclipse-workspace/Reports/src/test/java/features/google.feature:6
+    Given I want to google website # stepdefination.i_want_to_google_website()
+    And enter the search keyword   # stepdefination.enter_the_search_keyword()
