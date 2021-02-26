@@ -1,33 +1,27 @@
 pipeline {
     agent any
-
+    environment{
+        PATH = "Files/apache-maven-3.6.3/bin:$PATH"
+    }
     stages {
-        stage('Compile') {
-            steps {
-                bat 'mvn -version'
-              
-                    bat 'mvn clean '
-               
+        stage('Compile Stage'){
+            steps{
+                  git 'https://github.com/Dileepkumargit/cucumber-Reports.git'
             }
         }
-        stage('Test') {
+        stage('Testing Stage') {
             steps {
-                echo 'Testing stage'
-                bat 'mvn clean install'
+                script{
+                    bat(/mvn clean install/)
+                }
+
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'deployment stage'
-            }
+        stage('Reporting'){
+            steps{
+                    emailext (to: 'thupatidileep@gmail.com', replyTo: 'abc@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", body: readFile("target/cucumber-JVM-report/cucumber-html-reports/overview-features.html"), mimeType: 'text/html');
+                 }
         }
-        stage('Publish') {
-            steps {
-                echo 'Publish Cucumber Reports'
-                cucumber buildStatus: "UNSTABLE",
-                    fileIncludePattern: "cucumber.json",
-                    jsonReportDirectory: 'target'
-            }
-        }
+       
     }
 }
