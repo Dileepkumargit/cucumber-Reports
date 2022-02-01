@@ -17,7 +17,7 @@ public static WebDriver driver;
 	@Before
 	public void openbrpwser() throws IOException {
 //			propr();
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\abc\\Downloads\\Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\abc\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 //			\\ C:\\Users\\abc\\Downloads\\chromedriver_win32 (2)
 			
 			driver = new ChromeDriver();

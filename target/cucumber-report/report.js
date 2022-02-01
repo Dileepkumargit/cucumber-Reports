@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 11617427000,
+  "duration": 10371892200,
   "status": "passed"
 });
 formatter.scenario({
@@ -38,18 +38,18 @@ formatter.match({
   "location": "stepdefination.i_want_to_google_website()"
 });
 formatter.result({
-  "duration": 5953262500,
+  "duration": 4677993100,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdefination.enter_the_search_keyword()"
 });
 formatter.result({
-  "duration": 180900,
+  "duration": 186400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 73400,
+  "duration": 81900,
   "status": "passed"
 });
 });
